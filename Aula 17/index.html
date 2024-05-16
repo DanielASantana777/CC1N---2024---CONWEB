@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *.{
+            margin: 0;
+        }
+
+        .formulario{
+            width: 400px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .formilario span{
+            width: 100%;
+            font-size: 1.5em;
+
+        }
+
+        .field{
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .field span{
+            padding-left: 10px;
+            font-size: 100%;
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+
+        section{
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 240px;
+        }
+
+        .radio label{
+            width: ;
+        }
+    </style>
+</head>
+<body>
+    <div><h1>Formulário de Contato</h1></div>
+
+    <section>
+        <form class="formulario" action="mailto:fabricioi">
+            <span>Nome:</span>
+            <input type="text" id="nome" required placeholder="Nome do visitante" size="60"> <br> <br>
+            <span>E-mail</span>
+            <input type="email"><br>
+            <span>Data de nascimento</span>
+            <input type="date"><br>
+            <span>Visita ao Site:</span>
+            <input type="datetime-local"> <br>
+            <br>
+            <span>Senha:</span>
+            <input type="password">
+            <br>
+            <span>Contato:</span>
+            <input type="radio" name="contato" id="sim" value="Sim"> Sim
+            <input type="radio" name="contato" id="nao" value="Nao"> Não
+            <br>
+            <span>Assunto:</span>
+            <input type="checkbox" name="auto" id="auto">Automovel
+            <input type="checkbox" name="negocio" id="auto">Negócios
+            <input type="checkbox" name="auto" id="financa">Finanças
+            <input type="checkbox" name="auto" id="tecnologia">Tecnologia
+            <input type="checkbox" name="auto" id="esporte">Esporte
+            <br>
+            <span>Local: </span>
+            <select name="local" id="local" size="1">
+                <option value="">Selecione</option>
+                <optgroup label="Grande Vitória"></optgroup>
+                <option value="Vitória">Vitória</option>
+                <option value="Serra">Serra</option>
+                <option value="Cariacica">Cariacica</option>
+                <option value="Vila Velha">Vila Velha</option>
+                <option value="Guarapari">Guarapari</option>
+            </select>
+
+                <br>
+                <span>Comentario: </span>
+    <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
+        </form>
+    </section>
+    <br>
+    
+</body>
+</html>
