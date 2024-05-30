@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 21</title>
+    <style>
+        .dia{
+            width: 30px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <form>
+            <span>Data de Nascimento:</span>
+            <input  class="dia" type="number" id="dia" min="1" max="31">
+            <select id="mes" name="mes" class="mes">
+                <option value="01">Janeiro</option>
+                <option value="02">Fevereiro</option>
+                <option value="03">Março</option>
+                <option value="04">Abril</option>
+                <option value="05">Maio</option>
+                <option value="06">Junho</option>
+                <option value="07">Julho</option>
+                <option value="08">Agosto</option>
+                <option value="09">Setembro</option>
+                <option value="10">Outubro</option>
+                <option value="11">Novembro</option>
+                <option value="12">Dezembro</option>
+            </select>
+            <input type="number" min="1950" max="2024" id="ano" class="ano">
+        </form>
+        <button onclick="somaridade()">Calcular idade</button>
+    </div>
+    <div>
+        <button class="botao" onclick="calcularidade()">Calcula Idade</button>
+    </div>
+    <div>
+        <label onmouseover="calcularidade()" id="resultado">Idade</label>
+    </div>
+
+    <hr>
+
+    <input type="number">
+    
+</body>
+</html>
